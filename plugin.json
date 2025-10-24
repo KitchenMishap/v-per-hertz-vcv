@@ -1,22 +1,22 @@
 {
-  "slug": "ToDoPlugin",
-  "name": "ToDoPluginPlugin",
+  "slug": "VPerHertzPlugin",
+  "name": "Volts Per Hertz",
   "version": "2.0.0",
   "license": "MIT",
   "brand": "Kitchen Mishap",
   "author": "Nigel Sharp",
   "authorEmail": "hello@kitchenmishap.art",
   "authorUrl": "www.kitchenmishap.art",
-  "pluginUrl": "github.com/KitchenMishap/ToDo",
-  "manualUrl": "github.com/KitchenMishap/ToDo",
-  "sourceUrl": "github.com/KitchenMishap/ToDo",
+  "pluginUrl": "github.com/KitchenMishap/v-per-hertz-vcv",
+  "manualUrl": "github.com/KitchenMishap/v-per-hertz-vcv",
+  "sourceUrl": "github.com/KitchenMishap/v-per-hertz-vcv",
   "donateUrl": "",
   "changelogUrl": "",
   "modules": [
     {
-      "slug": "ToDo",
-      "name": "ToDo",
-      "description": "ToDo",
+      "slug": "VPerHertz",
+      "name": "Volts Per Hertz",
+      "description": "Converts between V/Oct and V/Hertz for use with (eg) Korg MS20",
       "tags": [
         "polyphonic"
       ]

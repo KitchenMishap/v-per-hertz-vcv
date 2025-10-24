@@ -6,7 +6,7 @@ void runTests()
 }
 
 
-struct ToDo : Module {
+struct VPerHertz : Module {
 	enum ParamId {
 		TODO_PARAM,
 		PARAMS_LEN
@@ -24,7 +24,7 @@ struct ToDo : Module {
 		LIGHTS_LEN
 	};
 
-	ToDo() {
+	VPerHertz() {
 		INFO("ToDo: Running Tests...");
 		runTests();
 		INFO("ToDo: ...Tests completed");
@@ -50,8 +50,8 @@ struct ToDo : Module {
 	}
 };
 
-struct ToDoWidget : ModuleWidget {
-	ToDoWidget(ToDo* module) {
+struct VPerHertzWidget : ModuleWidget {
+	VPerHertzWidget(VPerHertz* module) {
 		setModule(module);
 		setPanel(createPanel(asset::plugin(pluginInstance, "res/GeneratedPanelPaths.svg")));
 
@@ -64,17 +64,17 @@ struct ToDoWidget : ModuleWidget {
 		addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 		addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(col1, 25)), module, ToDo::TODO_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(col1, 25)), module, VPerHertz::TODO_PARAM));
 
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(7, 97)), module, ToDo::TODO_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(7, 97)), module, VPerHertz::TODO_INPUT));
 
-		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(7, 113)), module, ToDo::TODO_OUTPUT));
+		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(7, 113)), module, VPerHertz::TODO_OUTPUT));
 
-		addChild(createLightCentered<MediumLight<GreenLight>>(mm2px(Vec(width - 7, 86)), module, ToDo::TODO_LIGHT));
+		addChild(createLightCentered<MediumLight<GreenLight>>(mm2px(Vec(width - 7, 86)), module, VPerHertz::TODO_LIGHT));
 
 		// mm2px(Vec(10.0, 10.0))
 		addChild(createWidget<Widget>(mm2px(Vec(2.684, 81.945))));
 	}
 };
 
-Model* modelToDo = createModel<ToDo, ToDoWidget>("ToDo");
+Model* modelVPerHertz = createModel<VPerHertz, VPerHertzWidget>("VPerHertz");
