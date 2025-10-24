@@ -1,0 +1,25 @@
+{
+  "slug": "ToDoPlugin",
+  "name": "ToDoPluginPlugin",
+  "version": "2.0.0",
+  "license": "MIT",
+  "brand": "Kitchen Mishap",
+  "author": "Nigel Sharp",
+  "authorEmail": "hello@kitchenmishap.art",
+  "authorUrl": "www.kitchenmishap.art",
+  "pluginUrl": "github.com/KitchenMishap/ToDo",
+  "manualUrl": "github.com/KitchenMishap/ToDo",
+  "sourceUrl": "github.com/KitchenMishap/ToDo",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "ToDo",
+      "name": "ToDo",
+      "description": "ToDo",
+      "tags": [
+        "polyphonic"
+      ]
+    }
+  ]
+}
