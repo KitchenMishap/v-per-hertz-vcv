@@ -21,9 +21,9 @@ DISTRIBUTABLES += $(wildcard presets)
 
 # Generate SVG panel before building
 # Generate intermediate SVG with text, then convert text to paths
-res/GeneratedPanelPaths.svg: src/GeneratePanel.py
-	python src/GeneratePanel.py
-	inkscape res/GeneratedPanel.svg --export-text-to-path --export-plain-svg --export-filename=res/GeneratedPanelPaths.svg
+#res/GeneratedPanelPaths.svg: src/GeneratePanel.py
+#	python src/GeneratePanel.py
+#	inkscape res/GeneratedPanel.svg --export-text-to-path --export-plain-svg --export-filename=res/GeneratedPanelPaths.svg
 
 # Make the generated SVG a dependency of the all target
 all: res/GeneratedPanelPaths.svg
